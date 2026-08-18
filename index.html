@@ -1,126 +1,160 @@
 
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Escola Segura | Conscientização e Combate ao Bullying</title>
+    <title>Escola Segura | Conscientização e Prevenção do Bullying</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <header class="header">
-        <div class="container header-container">
-            <a href="#" class="logo">Escola<span>Segura</span></a>
-            
-            <div class="accessibility-bar" aria-label="Controles de Acessibilidade">
-                <button id="btn-decrease" title="Diminuir Fonte" aria-label="Diminuir tamanho do texto">A-</button>
-                <button id="btn-increase" title="Aumentar Fonte" aria-label="Aumentar tamanho do texto">A+</button>
-                <button id="btn-contrast" title="Alternar Alto Contraste" aria-label="Alternar modo de alto contraste">Alto Contraste</button>
+    <!-- Accessibility Bar -->
+    <div class="accessibility-bar">
+        <div class="container acc-flex">
+            <span>Acessibilidade:</span>
+            <div class="acc-controls">
+                <button id="btn-decrease-font" aria-label="Diminuir tamanho da fonte">A-</button>
+                <button id="btn-increase-font" aria-label="Aumentar tamanho da fonte">A+</button>
+                <button id="btn-toggle-contrast" aria-label="Alternar alto contraste">Alto Contraste</button>
             </div>
+        </div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="main-header">
+        <div class="container header-flex">
+            <a href="#" class="logo">Escola<span>Segura</span></a>
+            <nav class="nav-links">
+                <a href="#pilares">Pilares</a>
+                <a href="#depoimentos">Depoimentos</a>
+                <a href="#faq">Dúvidas</a>
+            </nav>
+            <a href="#contato" class="btn btn-primary">Agendar Palestra</a>
         </div>
     </header>
 
-    <main>
-        <section class="hero">
-            <div class="container hero-container">
-                <div class="hero-content">
-                    <span class="badge">Programa de Prevenção e Apoio</span>
-                    <h1>Transforme a Escola em um Ambiente de Respeito e Acolhimento</h1>
-                    <p>O bullying afeta o desenvolvimento de milhares de estudantes todos os dias. Descubra como identificar, prevenir e intervir de forma eficaz para garantir a segurança e a saúde mental nas escolas.</p>
-                    <div class="hero-actions">
-                        <a href="#solucoes" class="btn btn-primary">Conheça o Programa</a>
-                        <a href="#depoimentos" class="btn btn-secondary">Casos de Sucesso</a>
-                    </div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <span class="badge">Programa Nacional de Prevenção</span>
+                <h1>Transforme sua escola em um ambiente seguro e livre de bullying</h1>
+                <p>Capacitação especializada para educadores, acolhimento para alunos e orientação para famílias. Reduza em até 85% os incidentes de convivência escolar.</p>
+                <div class="hero-cta">
+                    <a href="#contato" class="btn btn-primary btn-large">Solicitar Proposta Pedagógica</a>
+                    <a href="#pilares" class="btn btn-secondary btn-large">Conhecer os Pilares</a>
                 </div>
             </div>
-        </section>
-
-        <section class="stats section">
-            <div class="container stats-grid">
-                <div class="stat-card">
-                    <h3>4x</h3>
-                    <p>Mais chances de isolamento social e queda no rendimento escolar.</p>
+            <div class="hero-card">
+                <h3>Impacto Comprovado</h3>
+                <div class="stat-item">
+                    <span class="stat-number">+150</span>
+                    <span class="stat-label">Escolas Atendidas</span>
                 </div>
-                <div class="stat-card">
-                    <h3>1 em 2</h3>
-                    <p>Jovens já sofreram algum tipo de intimidação na escola.</p>
+                <div class="stat-item">
+                    <span class="stat-number">45 mil</span>
+                    <span class="stat-label">Alunos Impactados</span>
                 </div>
-                <div class="stat-card">
-                    <h3>100%</h3>
-                    <p>Compromisso com o acolhimento, escuta ativa e solução contínua.</p>
+                <div class="stat-item">
+                    <span class="stat-number">98%</span>
+                    <span class="stat-label">Aprovação de Gestores</span>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="solucoes" class="section">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Pilares da Nossa Metodologia</h2>
-                    <p>Ações estruturadas para capacitar educadores, conscientizar alunos e envolver as famílias.</p>
+    <!-- Features / Pilares -->
+    <section id="pilares" class="features-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Metodologia Integrada de Combate ao Bullying</h2>
+                <p>Atuamos em todas as frentes da comunidade escolar para criar uma cultura de respeito contínuo.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="icon-box">📘</div>
+                    <h3>Capacitação Docente</h3>
+                    <p>Treinamento prático para professores e colaboradores identificarem sinais precoces e intervirem de forma assertiva.</p>
                 </div>
-                <div class="carousel-container">
-                    <div class="carousel-track" id="carousel-track">
-                        </div>
-                    <div class="carousel-controls">
-                        <button id="carousel-prev" aria-label="Item anterior">&larr;</button>
-                        <button id="carousel-next" aria-label="Próximo item">&rarr;</button>
-                    </div>
+                <div class="feature-card">
+                    <div class="icon-box">🤝</div>
+                    <h3>Workshops para Alunos</h3>
+                    <p>Atividades dinâmicas sobre empatia, comunicação não-violenta e prevenção ao ciberbullying no ambiente digital.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-box">🛡️</div>
+                    <h3>Envolvimento Familiar</h3>
+                    <p>Encontros com pais e responsáveis para alinhar o discurso e fortalecer a rede de apoio dentro e fora da escola.</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="faq" class="section bg-light">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Dúvidas Frequentes</h2>
-                    <p>Entenda como identificar os sinais e agir em situações de bullying.</p>
-                </div>
-                <div class="accordion-container" id="accordion-container">
-                    </div>
+    <!-- Testimonials / Carrossel Renderizado via JS -->
+    <section id="depoimentos" class="testimonials-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>O que dizem os gestores escolares</h2>
+                <p>Resultados reais em instituições que priorizaram a saúde emocional e a segurança de seus alunos.</p>
             </div>
-        </section>
-
-        <section id="depoimentos" class="section">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Impacto Real nas Instituições</h2>
-                    <p>Veja o depoimento de quem transformou o clima escolar com o nosso apoio.</p>
+            <div class="carousel-container">
+                <div id="carousel-target" class="carousel-content">
+                    <!-- Dynamic Render via JS -->
                 </div>
-                <div class="testimonials-grid">
-                    <article class="testimonial-card">
-                        <p>"A implementação do programa reduziu drasticamente os conflitos em sala de aula. Hoje temos um ambiente muito mais saudável para aprender e ensinar."</p>
-                        <div class="author">
-                            <strong>Profª. Carla Mendes</strong>
-                            <span>Coordenadora Pedagógica</span>
-                        </div>
-                    </article>
-                    <article class="testimonial-card">
-                        <p>"Os alunos aprenderam a importância da empatia. O sistema de escuta ativa deu voz para quem antes se calava por medo."</p>
-                        <div class="author">
-                            <strong>Roberto Silveira</strong>
-                            <span>Diretor Escolar</span>
-                        </div>
-                    </article>
+                <div class="carousel-controls">
+                    <button id="btn-prev-testimonial" aria-label="Depoimento Anterior">←</button>
+                    <button id="btn-next-testimonial" aria-label="Próximo Depoimento">→</button>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="cta section">
-            <div class="container cta-container">
-                <h2>Pronto para construir uma comunidade escolar mais segura?</h2>
-                <p>Junte-se ao programa e receba nosso guia de implementação imediata para a sua escola.</p>
-                <a href="#" class="btn btn-primary btn-large">Quero Proteger Minha Escola</a>
+    <!-- FAQ / Acordeão Renderizado via JS -->
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Perguntas Frequentes</h2>
+                <p>Tire suas dúvidas sobre a implementação do programa na sua instituição.</p>
             </div>
-        </section>
-    </main>
+            <div id="faq-target" class="faq-accordion">
+                <!-- Dynamic Render via JS -->
+            </div>
+        </div>
+    </section>
 
-    <footer class="footer">
-        <div class="container footer-container">
-            <p>&copy; 2026 Escola Segura. Todos os direitos reservados. Projeto focado em conscientização e combate ao bullying.</p>
+    <!-- CTA / Formularo -->
+    <section id="contato" class="cta-section">
+        <div class="container cta-grid">
+            <div class="cta-text">
+                <h2>Pronto para proteger a sua comunidade escolar?</h2>
+                <p>Entre em contato com nossa equipe pedagógica e receba um diagnóstico preventivo gratuito para a sua instituição.</p>
+            </div>
+            <form class="cta-form" onsubmit="event.preventDefault(); alert('Solicitação enviada com sucesso!');">
+                <div class="form-group">
+                    <label for="name">Nome Completo</label>
+                    <input type="text" id="name" required placeholder="Seu nome">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail Institucional</label>
+                    <input type="email" id="email" required placeholder="nome@escola.com.br">
+                </div>
+                <div class="form-group">
+                    <label for="school">Nome da Escola</label>
+                    <input type="text" id="school" required placeholder="Nome da sua instituição">
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Solicitar Apresentação</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-flex">
+            <p>&copy; 2026 Escola Segura. Todos os direitos reservados. Projeto focado na conscientização e prevenção do bullying escolar.</p>
         </div>
     </footer>
 
